@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airu Things</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome Icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <div class="logo">Porto<span>Folio</span></div>
+    <div class="nav-links">
+      <a href="#hero">Beranda</a>
+      <a href="#keahlian">Keahlian</a>
+      <a href="#proyek">Proyek</a>
+      <a href="#kontak">Kontak</a>
+    </div>
+  </div>
+
+  <div class="hero-container" id="hero">
+    <!-- Teks Kiri -->
+    <div class="hero-text">
+      <span class="badge">Halo, Selamat Datang!</span>
+      <h1>Saya <span class="highlight">Zahra Fauziah</span></h1>
+      <p>Mahasiswa yang semangat belajar membuat karya. <br>
+        Suka ngulik desain dan coding dari nol.</p>
+      <div class="hero-buttons">
+        <button id="btn-sapa" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Sapa Saya</button>
+        <a href="#proyek" class="btn btn-secondary"><i class="fa-solid fa-eye"></i> Lihat Karya</a>
+      </div>
+
+      <div id="pesan-interaktif" class="tersembunyi">
+        ✨ Terima kasih sudah berkunjung! Semoga harimu menyenangkan.
+      </div>
+    </div>
+
+    <div class="hero-image-box">
+      <img src="foto diri.jpeg" alt="Foto Profil" class="profile-img">
+      <div class="status-badge">
+        <span class="status-dot"></span> Siap Menerima jobdesk
+      </div>
+    </div>
+  </div>
+
+ <!-- Keahlian / Skills -->
+  <div class="content-container" id="keahlian">
+    
+    <!-- 1. Header Judul Harus Berdiri Sendiri -->
+    <div class="header-judul">
+      <h2>Keahlian Saya</h2>
+      <p>Teknologi dan bahasa pemrograman yang biasa saya gunakan</p>
+    </div> <!-- PASTIKAN TAG PENUTUP DIV INI ADA -->
+
+    <!-- 2. Pembungkus Kartu -->
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fa-brands fa-html5 skill-icon html-icon"></i>
+        <h3>HTML5</h3>
+        <p>Struktur web modern dan semantik</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-css3-alt skill-icon css-icon"></i>
+        <h3>CSS3</h3>
+        <p>Tampilan estetik, Flexbox & Grid</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-js skill-icon js-icon"></i>
+        <h3>JavaScript</h3>
+        <p>Manipulasi DOM & Fitur Interaktif</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-code skill-icon cpp-icon"></i>
+        <h3>C++</h3>
+        <p>Pemrograman tingkat lanjut & logika</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-hashtag skill-icon csharp-icon"></i>
+        <h3>C#</h3>
+        <p>Pengembangan aplikasi & game dev</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-python skill-icon python-icon"></i>
+        <h3>Python</h3>
+        <p>Pengolahan data & scripting</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-database skill-icon postgres-icon"></i>
+        <h3>PostgreSQL</h3>
+        <p>Pengelolaan database relasional</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-server skill-icon oracle-icon"></i>
+        <h3>Oracle</h3>
+        <p>Manajemen database skala besar</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-brands fa-figma skill-icon figma-icon"></i>
+        <h3>Figma</h3>
+        <p>Desain UI/UX & prototyping</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-palette skill-icon canva-icon"></i>
+        <h3>Canva</h3>
+        <p>Desain grafis & visual konten</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-paintbrush skill-icon ibis-icon"></i>
+        <h3>ibisPaint</h3>
+        <p>Ilustrasi digital & seni grafis</p>
+      </div>
+
+      <div class="skill-card">
+        <i class="fa-solid fa-pen-nib skill-icon medibang-icon"></i>
+        <h3>MediBang</h3>
+        <p>Pembuatan komik & gambar digital</p>
+      </div>
+    </div> <!-- PASTIKAN PENUTUP SKILLS-GRID DI SINI -->
+
+  </div> <!-- PENUTUP CONTENT-CONTAINER -->
+
+  <!-- Proyek -->
+  <div class="content-container" id="proyek">
+    <div class="header-judul">
+      <h2>Proyek Terbaru</h2>
+      <p>Beberapa proyek yang sudah saya seleseikan</p>
+    </div>
+
+    <div class="proyek-grid">
+      <a href="https://inventrack-sepia.vercel.app/" target="_blank" class="tag-link">
+        <div class="proyek-card">
+        <div class="proyek-img-box">
+          <i class="fa-solid fa-store"></i></a>
+        </div>
+        <div class="proyek-info">
+        <h3>InvenTrack</h3>
+          <p>Sistem Pencatatan stok dan penjualan UMKM.</p>
+          <div class="proyek-tags">
+            <span>C++</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://libline.vercel.app/" target="_blank">
+      <div class="proyek-card">
+        <div class="proyek-img-box">
+          <i class="fa-solid fa-chart-line"></i></a>
+        </div>
+        <div class="proyek-info">
+          <h3>Libline</h3>
+          <p>Sistem Pencarian buku perpustakan kecil.</p>
+          <div class="proyek-tags">
+            <span>Pyhton</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Kontak -->
+  <div class="content-container" id="kontak">
+    <div class="kontak-box">
+      <h2>Punya Proyek Menarik?</h2>
+      <p>Mari bekerja sama untuk mewujudkan sistem impianmu.</p>
+      <div class="kontak-socials">
+        <a href="https://github.com/rara2871" target ="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="mailto:zahrafauziah2825@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>2026 Portofolio Saya. Dibuat dengan HTML, CSS, & JS.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
